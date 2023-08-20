@@ -16,6 +16,9 @@ spring:
           uri: lb://catalog-service/
           predicates:
             - Path=/catalog/**
+          filter:
+            - AddRequestHeader=catalog-request-header, custom-catalog-request-header
+            - AddResponseHeader=catalog-response-header, custom-catalog-response-header
 
 eureka:
   client:
