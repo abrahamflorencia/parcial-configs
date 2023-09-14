@@ -7,7 +7,7 @@ spring:
   data:
     mongodb:
       database: test
-      port: 27017
+      port: 27020
   zipkin:
     baseUrl: http://localhost:9411/
     enabled: true
